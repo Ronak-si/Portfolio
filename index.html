@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ronak Singh | Frontend Developer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#0f172a;
+color:white;
+}
+
+header{
+width:100%;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:fixed;
+top:0;
+left:0;
+background:rgba(15,23,42,0.9);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+
+.logo{
+font-size:28px;
+font-weight:700;
+color:#38bdf8;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:30px;
+font-weight:500;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#38bdf8;
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:120px 8%;
+gap:50px;
+}
+
+.hero-text{
+flex:1;
+}
+
+.hero-text h3{
+font-size:25px;
+color:#38bdf8;
+}
+
+.hero-text h1{
+font-size:60px;
+margin:10px 0;
+}
+
+.hero-text h2{
+font-size:30px;
+margin-bottom:20px;
+}
+
+.hero-text p{
+line-height:1.8;
+color:#cbd5e1;
+max-width:600px;
+}
+
+.btns{
+margin-top:30px;
+display:flex;
+gap:20px;
+}
+
+.btn{
+padding:14px 30px;
+border-radius:8px;
+text-decoration:none;
+font-weight:600;
+transition:0.3s;
+}
+
+.primary{
+background:#38bdf8;
+color:black;
+}
+
+.primary:hover{
+transform:translateY(-5px);
+}
+
+.secondary{
+border:2px solid #38bdf8;
+color:#38bdf8;
+}
+
+.secondary:hover{
+background:#38bdf8;
+color:black;
+}
+
+.hero-image{
+flex:1;
+display:flex;
+justify-content:center;
+}
+
+.hero-image img{
+width:380px;
+height:480px;
+object-fit:cover;
+border-radius:20px;
+border:5px solid #38bdf8;
+box-shadow:0 0 40px rgba(56,189,248,0.4);
+}
+
+section{
+padding:100px 8%;
+}
+
+.section-title{
+font-size:40px;
+margin-bottom:50px;
+text-align:center;
+color:#38bdf8;
+}
+
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+align-items:center;
+}
+
+.about-card{
+background:#1e293b;
+padding:30px;
+border-radius:20px;
+}
+
+.about-card h3{
+margin-bottom:20px;
+font-size:28px;
+}
+
+.about-card p{
+line-height:1.8;
+color:#cbd5e1;
+}
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.skill-box{
+background:#1e293b;
+padding:25px;
+border-radius:15px;
+}
+
+.skill-box h4{
+margin-bottom:15px;
+}
+
+.progress{
+height:10px;
+background:#334155;
+border-radius:10px;
+overflow:hidden;
+}
+
+.progress div{
+height:100%;
+background:#38bdf8;
+}
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+}
+
+.project-card{
+background:#1e293b;
+padding:25px;
+border-radius:20px;
+transition:0.3s;
+}
+
+.project-card:hover{
+transform:translateY(-10px);
+}
+
+.project-card h3{
+margin-bottom:15px;
+}
+
+.project-card p{
+color:#cbd5e1;
+margin-bottom:20px;
+}
+
+.project-card a{
+color:#38bdf8;
+text-decoration:none;
+font-weight:600;
+}
+
+.contact{
+text-align:center;
+}
+
+.contact p{
+margin:15px 0;
+color:#cbd5e1;
+}
+
+footer{
+padding:30px;
+text-align:center;
+background:#020617;
+margin-top:50px;
+}
+
+.typing{
+color:#38bdf8;
+font-weight:600;
+}
+
+@media(max-width:900px){
+
+.hero{
+flex-direction:column-reverse;
+text-align:center;
+}
+
+.hero-text h1{
+font-size:45px;
+}
+
+.about{
+grid-template-columns:1fr;
+}
+
+nav{
+display:none;
+}
+
+.hero-image img{
+width:300px;
+height:380px;
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">Ronak.</div>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero" id="home">
+
+<div class="hero-text">
+<h3>Hello, I'm</h3>
+<h1>Ronak Singh</h1>
+
+<h2>
+Frontend Developer &
+<span class="typing" id="typing"></span>
+</h2>
+
+<p>
+Driven Frontend Developer and aspiring Software Engineer skilled in HTML, CSS, JavaScript, React.js and DSA in Java. Passionate about building responsive websites and solving real-world problems through clean and efficient code.
+</p>
+
+<div class="btns">
+<a href="Ronak_Singh_Clickable_Resume.pdf" download class="btn primary">
+Download Resume
+</a>
+<a href="https://github.com/Ronak-si" class="btn secondary">GitHub</a>
+</div>
+</div>
+
+<div class="hero-image">
+<img src="yourphoto.jpg" alt="">
+</div>
+
+</section>
+
+<section id="about">
+
+<h2 class="section-title">About Me</h2>
+
+<div class="about">
+
+<div class="about-card">
+<h3>Who Am I?</h3>
+
+<p>
+I am a B.Tech IT student from Guru Gobind Singh Indraprastha University, passionate about frontend development and problem solving. I enjoy creating modern UI designs and interactive web applications.
+</p>
+
+</div>
+
+<div class="about-card">
+
+<h3>Education</h3>
+
+<p>
+B.Tech - Information Technology<br>
+Guru Gobind Singh Indraprastha University<br>
+2024 - 2028
+</p>
+
+<br>
+
+<p>
+Class 12th - 95%<br>
+PSM Public School
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="skills">
+
+<h2 class="section-title">Skills</h2>
+
+<div class="skills">
+
+<div class="skill-box">
+<h4>HTML</h4>
+<div class="progress"><div style="width:95%"></div></div>
+</div>
+
+<div class="skill-box">
+<h4>CSS</h4>
+<div class="progress"><div style="width:90%"></div></div>
+</div>
+
+<div class="skill-box">
+<h4>JavaScript</h4>
+<div class="progress"><div style="width:85%"></div></div>
+</div>
+
+<div class="skill-box">
+<h4>React.js</h4>
+<div class="progress"><div style="width:80%"></div></div>
+</div>
+
+<div class="skill-box">
+<h4>DSA in Java</h4>
+<div class="progress"><div style="width:82%"></div></div>
+</div>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<h2 class="section-title">Projects</h2>
+
+<div class="projects">
+<div class="project-card">
+<h3>SIH 2025 Project</h3>
+
+<p>
+Solving problems of Campus 
+</p>
+
+<a href="https://ronak-si.github.io/Campusbuddy-2.O/" target="_blank">
+View Project
+</a>
+</div>
+
+<div class="project-card">
+<h3>Rock Paper Scissor Game</h3>
+<p>
+Interactive game using HTML, CSS and JavaScript with score tracking and animations.
+</p>
+
+<a href="https://github.com/Ronak-si">View Project</a>
+</div>
+
+<div class="project-card">
+<h3>Todo List App</h3>
+
+<p>
+Responsive todo app with add, delete and task management functionality.
+</p>
+
+<a href="https://github.com/Ronak-si">View Project</a>
+</div>
+
+
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="section-title">Contact Me</h2>
+
+<div class="contact">
+
+<p>Email : ronak9718z@gmail.com</p>
+<p>Phone : 7042906877</p>
+<p>Location : New Delhi, India</p>
+
+<div class="btns" style="justify-content:center">
+<a href="https://linkedin.com" class="btn primary">LinkedIn</a>
+<a href="https://github.com/Ronak-si" class="btn secondary">GitHub</a>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+<p>© 2026 Ronak Singh | Frontend Developer</p>
+</footer>
+
+<script>
+
+const words = ["DSA Learner", "React Developer", "Problem Solver"];
+
+let i = 0;
+let j = 0;
+let currentWord = "";
+let isDeleting = false;
+
+const typing = document.getElementById("typing");
+
+function type(){
+
+currentWord = words[i];
+
+if(isDeleting){
+typing.textContent = currentWord.substring(0,j--);
+}else{
+typing.textContent = currentWord.substring(0,j++);
+}
+
+if(!isDeleting && j === currentWord.length){
+isDeleting = true;
+
+setTimeout(type,1000);
+return;
+}
+
+if(isDeleting && j === 0){
+isDeleting = false;
+i++;
+
+if(i === words.length){
+i = 0;
+}
+}
+
+setTimeout(type,isDeleting ? 50 : 120);
+}
+
+type();
+
+</script>
+
+</body>
+</html>
