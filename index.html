@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ronak Singh | Frontend Developer</title>
+<meta name="description" content="Ronak Singh — Software Engineer and frontend developer building AI-powered products and modern web applications.">
+<title>Ronak Singh | Software Engineer &amp; Frontend Developer</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
@@ -38,8 +39,13 @@ section{padding:100px 8%;}
 .progress div{height:100%;background:#38bdf8;}
 .project-card{transition:.3s;}
 .project-card:hover{transform:translateY(-8px);}
-.project-card h3{margin-bottom:12px;}
-.project-card a{display:inline-block;margin-top:15px;color:#38bdf8;text-decoration:none;font-weight:600;}
+.project-card h3{margin-bottom:10px;}
+.project-stack{color:#7dd3fc;font-size:.88rem;font-weight:600;margin-bottom:14px;}
+.project-card ul{color:#cbd5e1;line-height:1.65;padding-left:20px;margin-top:12px;}
+.project-card li{margin:7px 0;}
+.project-links{display:flex;gap:20px;flex-wrap:wrap;margin-top:18px;}
+.project-card a{color:#38bdf8;text-decoration:none;font-weight:600;}
+.project-card a:hover{text-decoration:underline;}
 .contact{text-align:center;}
 .contact p{margin:12px 0;color:#cbd5e1;}
 footer{background:#020617;padding:25px;text-align:center;}
@@ -70,11 +76,11 @@ nav{display:none;}
 <div class="hero-text">
 <h3>Hello, I'm</h3>
 <h1>Ronak Singh</h1>
-<h2>Frontend Developer & <span class="typing" id="typing"></span></h2>
-<p>Driven Frontend Developer and aspiring Software Engineer skilled in HTML, CSS, JavaScript, React.js and DSA in Java. Passionate about building responsive websites and solving real-world problems through clean and efficient code.</p>
+<h2>Software Engineer &amp; <span class="typing" id="typing"></span></h2>
+<p>Driven Software Engineer and aspiring SDE skilled in Java, JavaScript, React, and data structures and algorithms. I build responsive web applications and practical AI-powered products with clean, efficient code.</p>
 <div class="btns">
 <a href="Ronak_Singh_Resume final.pdf" class="btn primary" download>Download Resume</a>
-<a href="https://github.com/Ronak-si" class="btn secondary" target="_blank">GitHub</a>
+<a href="https://github.com/Ronak-si" class="btn secondary" target="_blank" rel="noopener noreferrer">GitHub</a>
 </div>
 </div>
 <div class="hero-image">
@@ -113,22 +119,42 @@ nav{display:none;}
 <div class="projects">
 
 <div class="project-card">
-<h3>Interview Ace AI</h3>
-<p>Developed an AI-powered interview preparation platform using React.js. The application provides mock interviews, AI-generated interview questions, performance feedback, responsive UI, and an engaging experience to help students prepare for technical and HR interviews.</p>
-<a href="https://interview-ace-431.lovable.app/" target="_blank">Live Demo</a><br>
-<a href="https://github.com/Ronak-si" target="_blank">GitHub</a>
+<h3>PrepAI — AI Interview Preparation</h3>
+<div class="project-stack">React 19 · TanStack Start · Firebase · Gemini AI · Vercel</div>
+<p>Built and deployed a full-stack mock-interview platform that generates role-specific technical questions and gives candidates structured practice with actionable feedback.</p>
+<ul>
+<li>Implemented Firebase Authentication and Cloud Firestore for sign-in and private interview history.</li>
+<li>Integrated server-side Gemini AI for question generation and answer evaluation, keeping API credentials off the client.</li>
+<li>Created timed interview sessions and an analytics dashboard with score trends and skill breakdowns.</li>
+</ul>
+<div class="project-links">
+<a href="https://ai-powered-interview-preparation-ac.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+<a href="https://github.com/Ronak-si/AI-powered-interview-preparation-ACE-" target="_blank" rel="noopener noreferrer">GitHub</a>
+</div>
 </div>
 
 <div class="project-card">
-<h3>CampusBuddy (SIH 2025)</h3>
-<p>An AI-powered campus maintenance reporting system that enables students to report issues, track complaints, and improve communication between users and campus authorities.</p>
-<a href="https://ronak-si.github.io/Campusbuddy-2.O/" target="_blank">View Project</a>
+<h3>PayShield AI — Payment Risk Intelligence</h3>
+<div class="project-stack">React · Node.js · Explainable AI (XAI) · Risk Scoring Engine</div>
+<p>Designed and built an explainable payment-fraud risk platform that combines transaction and behavioral signals to produce a real-time graded risk score.</p>
+<ul>
+<li>Surfaces the factors behind each score with a recommended approve, review, or block decision.</li>
+<li>Maintains an audit trail to support merchant trust and compliance review.</li>
+<li>Shipped an end-to-end hackathon prototype using demonstration transaction data.</li>
+</ul>
+<div class="project-links">
+<a href="https://payshield-ai-risk-in-0xt3.bolt.host/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+<a href="https://github.com/Ronak-si/PayshieldAI" target="_blank" rel="noopener noreferrer">GitHub</a>
+</div>
 </div>
 
 <div class="project-card">
 <h3>Todo List App</h3>
-<p>A responsive task management application built using HTML, CSS and JavaScript with add, edit, delete and task organization features.</p>
-<a href="https://github.com/Ronak-si" target="_blank">View Project</a>
+<div class="project-stack">HTML · CSS · JavaScript</div>
+<p>A responsive task management application with add, edit, delete, and task organization features.</p>
+<div class="project-links">
+<a href="https://github.com/Ronak-si" target="_blank" rel="noopener noreferrer">View Project</a>
+</div>
 </div>
 
 </div>
@@ -141,16 +167,16 @@ nav{display:none;}
 <p>Phone : 9718980353</p>
 <p>Location : New Delhi, India</p>
 <div class="btns" style="justify-content:center;">
-<a href="https://www.linkedin.com/in/ronak-singh-55a886320/" target="_blank" class="btn primary">LinkedIn</a>
-<a href="https://github.com/Ronak-si" target="_blank" class="btn secondary">GitHub</a>
+<a href="https://www.linkedin.com/in/ronak-singh-55a886320/" target="_blank" rel="noopener noreferrer" class="btn primary">LinkedIn</a>
+<a href="https://github.com/Ronak-si" target="_blank" rel="noopener noreferrer" class="btn secondary">GitHub</a>
 </div>
 </div>
 </section>
 
-<footer>© 2026 Ronak Singh | Frontend Developer</footer>
+<footer>© 2026 Ronak Singh | Software Engineer &amp; Frontend Developer</footer>
 
 <script>
-const words=["DSA Learner","React Developer","Problem Solver"];
+const words=["SDE Aspirant","React Developer","Problem Solver"];
 let i=0,j=0,deleting=false;
 const typing=document.getElementById("typing");
 function type(){
